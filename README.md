@@ -1,6 +1,6 @@
 # Basics of neural network
 
-![A simple neural network](https://github.com/chkhorlucas/neural-network-basics/images/simple_nn.png)
+![A simple neural network](/images/simple_nn.png)
 
 Input layer | Weight | Hidden layer 0 |
 ------------|--------|----------------|
