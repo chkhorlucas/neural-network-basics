@@ -11,7 +11,11 @@ An **Artificial Neural Network** is about mimicking the way human's brain works,
 
 We are going to touch on the simplest model, by passing the signals from front to back, called **feedforward**, to predict an output and later use a backwards process called **backpropagation** to learn by adjusting the nodes in order to achieve better accuracy.
 
+### Feedforward model
 ![Feedforward model](/images/feedforward.png)
+
+### Deep Feedforward
+![A 'deeper' feedforward example](/images/simple_nn.png)
 
 ## Components
  * input nodes
@@ -25,8 +29,6 @@ Every single neuron will go through a calculation process.
   3. Activation.
 
 ![A neuron](/images/neuron.png)
-
-![A 'deeper' feedforward example](/images/simple_nn.png)
 
 ## Activation function
 
