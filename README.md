@@ -1,51 +1,32 @@
-# Basics of neural network
+# Introduction
+Before we dive into neural networks, let's have a broader perspective.
 
-![A simple neural network](/images/simple_nn.png)
+## AI vs ML vs DL
+**Artificial Intelligence** is about simulation of human intelligence by machines to perform task thats required human intelligence. **Machine Learning** is a branch of AI that instead of based on human coded rules, machine perform tasks by learning itself based on massive data that being feed into it. **Deep Learning** is a way of machine learning that added with hidden layers of nodes in between input and output data, that are able to tweak and adjust to produce optimum result.
 
+![AI vs ML vs DL](/images/chart01.png)
 
- input_data | weights | hidden_0_input | hidden_layer_0 | hidden_0_output
-:----------:|:-------:|:--------------:|:--------------:|:--------------:
-  1  | 2 | 2 | *node_0_0* | 8
-  2  | 3 | 6 | *node_0_0* | 8
-  1  | 1 | 1 | *node_0_1* | 3
-  2  | 1 | 2 | *node_0_1* | 3
-  1  | 1 | 1 | *node_0_2* | 1
-  2  | 0 | 0 | *node_0_2* | 1
+## What is a neural network?
+An **Artificial Neural Network** is about mimicking the way human's brain works, by transmitting signals from nodes to nodes  These nodes are fully connected, with every node in one layer connected to every other node in next layer.
 
+We are going to touch on the simplest model, by passing the signals from front to back, called **feedforward**, to predict an output and later use a backwards process called **backpropagation** to learn by adjusting the nodes in order to achieve better accuracy.
 
- hidden_0_output | weights | hidden_1_input | hidden_layer_1 | hidden_1_output  
-:---------------:|:-------:|:--------------:|:--------------:|:--------------:
-  8 | 1 | 8 | *node_1_0* | 5  
-  3 | -1 | -3 | *node_1_0* | 5
-  1 | 0 | 0 | *node_1_0* | 5
-  8 | 0 | 0 | *node_1_1* | 2
-  3 | 1 | 3 | *node_1_1* | 2
-  1 | -1 | -1 | *node_1_1* | 2
-  8 | -1 | -8 | *node_1_2* | 2
-  3 | 3 | 9 | *node_1_2* | 2
-  1 | 1 | 1 | *node_1_2* | 2
-
-
- hidden_1_output | weights | output
-:---------------:|:-------:|:-----:
-  5 | 2 | 10
-  2 | 1 | 2
-  2 | 1 | 2
-
-
- output |
-:------:|
- 14 |
-
-
-
-
-
+![Feedforward model](/images/feedforward.png)
 
 ## Components
-input units, hidden units, output units
+ * input nodes
+ * hidden nodes
+ * output nodes
+ * weights
 
-## Feedforward
+Every single neuron will go through a calculation process.
+  1. Input signals **multiply** with corresponding **weights**.
+  2. Outcome of the multiplication will be **summed** up. (Optional) *Bias* may or may not added to the sum.
+  3. Activation.
+
+![A neuron](/images/neuron.png)
+
+![A 'deeper' feedforward example](/images/simple_nn.png)
 
 ## Activation function
 
